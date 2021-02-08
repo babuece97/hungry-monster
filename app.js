@@ -14,7 +14,7 @@ fetch('https://www.themealdb.com/api/json/v1/1/search.php?f=a') //+input.value)
   {
   var tempValue = data['main']['temp'];
   var nameValue = data['name'];
-  var descValue = data['weather'][0]['description'];
+  var descValue = data['food'][0]['description'];
 
   main.innerHTML = nameValue;
   desc.innerHTML = "Desc - "+descValue;
